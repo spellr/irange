@@ -1,9 +1,25 @@
 package irange
 
 import (
+	"fmt"
 	"reflect"
 	"testing"
 )
+
+func ExampleRange_oneParam() {
+	fmt.Println(Range(3))
+	// Output: [0 1 2]
+}
+
+func ExampleRange_twoParams() {
+	fmt.Println(Range(3, 6))
+	// Output: [3 4 5]
+}
+
+func ExampleRange_threeParams() {
+	fmt.Println(Range(3, -3, -2))
+	// Output: [3 1 -1]
+}
 
 func TestRange(t *testing.T) {
 	tests := []struct {
