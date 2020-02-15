@@ -1,6 +1,7 @@
 # irange
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/spellr/irange)](https://goreportcard.com/report/github.com/spellr/irange)
+[![GoDoc](https://godoc.org/github.com/spellr/irange?status.svg)](https://godoc.org/github.com/spellr/irange)
 
 Produce a sequence of integers. Simple, but helpful
 

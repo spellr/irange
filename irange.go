@@ -1,3 +1,4 @@
+// Provides a way to create sequence of integers. Simple, but helpful.
 package irange
 
 func max(x, y int) int {
@@ -34,6 +35,12 @@ func getParams(params ...int) (start int, end int, step int) {
 	}
 }
 
+// Produce a sequence of numbers.
+// Accepts at least 1, and up to 3 parameters.
+// If a single parameter is given, 'end', returns the numbers from 0 to end, exclusive
+// Range(3) returns [0, 1, 2].
+// If more than 1 parameter is given "Range(start, end, step?)", Range returns the numbers from
+// 'start' (inclusive) to 'end' (exclusive), with increments of 'step'.
 func Range(params ...int) []int {
 	start, end, step := getParams(params...)
 
