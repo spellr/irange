@@ -1,4 +1,4 @@
-// Provides a way to create sequence of integers. Simple, but helpful.
+// Package irange provides a way to create sequence of integers. Simple, but helpful.
 package irange
 
 func max(x, y int) int {
@@ -35,7 +35,7 @@ func getParams(params ...int) (start int, end int, step int) {
 	}
 }
 
-// Produce a sequence of numbers.
+// Range produces a sequence of numbers.
 // Accepts at least 1, and up to 3 parameters.
 // If a single parameter is given, 'end', returns the numbers from 0 to end, exclusive
 // Range(3) returns [0, 1, 2].
